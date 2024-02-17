@@ -21,8 +21,8 @@ Comparison with existing tuning-free state-of-the-art techniques. InstantID achi
  -->
 
 ## Api Usage Tips
-- Get your own ```openId``` and ```apiKey``` in WeChat applet 'SelfitCamera' (赛飞相机)
-- Create your clothing model in WeChat applet 'SelfitCamera' (赛飞相机), record its ```clothId``` in details page.
+- Get your own ```openId``` and ```apiKey``` in WeChat applet **SelfitCamera (赛飞相机)**
+- Create your clothing model in WeChat applet **SelfitCamera (赛飞相机)**, record its ```clothId``` in details page.
 - Upload your pose image with function ```upload_pose_img```, then public a cloth swap task ```publicClothSwap```
 - Get result with ```getInfRes```
 
