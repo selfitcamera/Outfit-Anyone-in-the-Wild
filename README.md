@@ -47,4 +47,4 @@ Extensive experiments on an in-the-wild test set demonstrate the superiority of 
 - [HuggingFace](https://github.com/huggingface)
 - [ModelScope](https://github.com/modelscope/modelscope) 
 
-For any question, please feel free to contact us via jiangxiaoguo@selficamera.cn
+For any question, please feel free to contact us via jiangxiaoguo@selfitcamera.cn
