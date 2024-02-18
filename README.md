@@ -20,6 +20,15 @@ Outfit InTheWild is a new state-of-the-art virtual try-on method to produce high
 Comparison with existing tuning-free state-of-the-art techniques. InstantID achieves better fidelity and retain good text editability (faces and styles blend better).
  -->
 
+## Abstract
+Virtual Try-On task aims to transfer an in-shop garment image onto a target person. Existing methods focus on improving metrics on the fitting data set, they often overlook the diversity of user poses and complexity of environments in street photos. In addition, how to maintain the consistency of user IDs and clothing style details is also a more tricky topic. All the above problems prevent virtual try-on tasks from being implemented in real scenes and online e-commerce. 
+
+In this paper, we propose OutfitAnyone in-the-wild, which achieves a perfect balance between image harmony, clothing detail consistency, and user's face ID retention.
+We first model human bodies in the user's photo and clothing photo through our pre-trained human body reconstruction large model. Then deformation on posture and figure is performed in parameter space to match the user's picture. As a part of our human body parametric model, clothing appearance follows the deformation of the human body, and changes under physical laws, so that they can fit the user's human body harmoniously. The rendered image will finally go through a detect-and-refine network that can repair discordant factors in human body images. 
+
+Extensive experiments on an in-the-wild test set demonstrate the superiority of our method, surpassing state-of-the-art methods both qualitatively and quantitatively
+
+
 ## Api Usage Tips
 - Get your own ```openId``` and ```apiKey``` in WeChat applet **SelfitCamera (赛飞相机)**
 - Create your clothing model in WeChat applet **SelfitCamera (赛飞相机)**, record its ```clothId``` in details page.
