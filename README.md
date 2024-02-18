@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Outfit Anyone in the Wild: Get rid of Annoying Restrictions for Virtual Try-on Task</h1>
 
-<a href='https://huggingface.co/spaces/selfit-camera/OutfitAnyoneInTheWild'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
+<a href='https://huggingface.co/spaces/selfit-camera/OutfitAnyone-in-the-Wild'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
 [![ModelScope](https://img.shields.io/badge/ModelScope-Studios-blue)](https://www.modelscope.cn/studios/selfitcamera/OutfitAnyoneInTheWild/summary)
 
 </div>
