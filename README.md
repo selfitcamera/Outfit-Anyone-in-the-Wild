@@ -8,7 +8,7 @@
 
 Outfit InTheWild is a new state-of-the-art virtual try-on method to produce high-quality try-on result on street photos. It achievies a perfect balance between user's face ID retention and clothing detail consistency.
 
-<img src='assets/applications.png'>
+<img src='assets/show.JPG'>
 
 
 <!-- ### Comparison with Previous Works
@@ -40,6 +40,7 @@ Extensive experiments on an in-the-wild test set demonstrate the superiority of 
 - [openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) 
 - [M3D-VTON](https://github.com/fyviezhao/M3D-VTON) 
 - [GP-VTON](https://github.com/xiezhy6/GP-VTON) 
+- [OutfitAnyone](https://github.com/HumanAIGC/OutfitAnyone) 
 - [InstantID](https://github.com/InstantID/InstantID) 
 - [street-tryon](https://github.com/cuiaiyu/street-tryon-benchmark) 
 - [MeshGraphormer](https://github.com/microsoft/MeshGraphormer) 
