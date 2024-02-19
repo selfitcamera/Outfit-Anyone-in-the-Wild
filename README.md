@@ -3,6 +3,7 @@
 
 <a href='https://huggingface.co/spaces/selfit-camera/OutfitAnyone-in-the-Wild'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
 [![ModelScope](https://img.shields.io/badge/ModelScope-Studios-blue)](https://www.modelscope.cn/studios/selfitcamera/OutfitAnyoneInTheWild/summary)
+[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/jiangxiaoguo/OutfitAnyone-in-the-Wild)
 
 </div>
 
