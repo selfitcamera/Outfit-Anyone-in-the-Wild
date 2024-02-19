@@ -9,7 +9,7 @@ def onUpload():
 def onClick(cloth_id, pose_image, pose_id, size, request: gr.Request):
     if pose_image is None:
         return None, "no pose image found !"
-    # pose_id, cloth_id = pose_id['label'], cloth_id['label']
+    pose_id, cloth_id = pose_id['label'], cloth_id['label']
     # print(pose_id, cloth_id, size, (pose_image is None), len(pose_id)>0)
     if len(pose_id)>0:
         res = get_result_example(cloth_id, pose_id)
