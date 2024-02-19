@@ -164,7 +164,7 @@ with gr.Blocks(css=css) as demo:
             his_res_image5 = gr.HTML()            
 
     run_button.click(fn=onClick, inputs=[cloth_id, pose_image, pose_id, size_slider], 
-                     outputs=[res_image, info_text], concurrency_limit=30)
+                     outputs=[res_image, info_text])
 
     pose_image.upload(fn=onUpload, inputs=[], outputs=[pose_id],)
     demo.load(onLoad, inputs=[], outputs=[his_pose_image1, his_res_image1,
