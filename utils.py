@@ -13,10 +13,12 @@ import gradio as gr
 ApiUrl = os.environ['ApiUrl']
 OpenId = os.environ['OpenId']
 ApiKey = os.environ['ApiKey']
+OssUrl = os.environ['OssUrl']
 
 
 proj_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(proj_dir, 'Datas')
+# data_dir = "Datas"
 tmpFolder = "tmp"
 os.makedirs(tmpFolder, exist_ok=True)
 
@@ -53,7 +55,11 @@ def getAllInfs(apiUrl, openId, apiKey, clientIp):
     if ret.status_code==200:
         if 'data' in ret.json():
             records = ret.json()['data']['records']
-            res = [{'pose':record['body_url'], 'res':record['showUrl']} for record in records]
+            for record in records:
+                res.append({'pose':OssUrl+record['body_url']+"?thumbnail/768x768>", 
+                    'res':OssUrl+record['showUrl']+"?thumbnail/768x768>"})
+                # res.append({'pose':OssUrl+record['body_url'], 
+                #     'res':OssUrl+record['showUrl']})
     return res
 
 
