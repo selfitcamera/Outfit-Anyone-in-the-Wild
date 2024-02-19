@@ -65,24 +65,25 @@ def onLoad(request: gr.Request):
     if x_forwarded_for:
         client_ip = x_forwarded_for
     his_datas = [None for _ in range(10)]
-    try:
-        infs = getAllInfs(ApiUrl, OpenId, ApiKey, client_ip)
-        print(client_ip, 'history infs: ', len(infs))
-        # print(infs)
-
-        for i, inf in enumerate(infs):
-            if i>4: continue
-            pose = inf['pose']
-            res = inf['res']
-            # his_datas[i*2] = f"[pose]({pose})"+f"![pose]({pose})"
-            # his_datas[i*2+1] = f"[res]({res})"+f"![res]({res})"  
-            his_datas[i*2] = f"<img src=\"{pose}\" >"
-            his_datas[i*2+1] = f"<img src=\"{res}\" >"
-
-        time.sleep(3)
-    except Exception as e:
-        print(e)
     return his_datas
+    # try:
+    #     infs = getAllInfs(ApiUrl, OpenId, ApiKey, client_ip)
+    #     print(client_ip, 'history infs: ', len(infs))
+    #     # print(infs)
+
+    #     for i, inf in enumerate(infs):
+    #         if i>4: continue
+    #         pose = inf['pose']
+    #         res = inf['res']
+    #         # his_datas[i*2] = f"[pose]({pose})"+f"![pose]({pose})"
+    #         # his_datas[i*2+1] = f"[res]({res})"+f"![res]({res})"  
+    #         his_datas[i*2] = f"<img src=\"{pose}\" >"
+    #         his_datas[i*2+1] = f"<img src=\"{res}\" >"
+
+    #     time.sleep(3)
+    # except Exception as e:
+    #     print(e)
+    # return his_datas
 
 
 cloth_examples = get_cloth_examples()
