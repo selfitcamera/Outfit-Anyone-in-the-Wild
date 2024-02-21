@@ -7,12 +7,13 @@
 
 </div>
 
+
+<font color='red'>**Note: Please give us a star if you like this project. Which is important to us. Thanks!**</font> :stuck_out_tongue_winking_eye:
+
+
 OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to produce high-quality try-on result on street photos. It achievies a perfect balance between user's face ID retention and clothing detail consistency.
 
 <img src='assets/show.JPG'>
-
-
-<font color='red'>**Note: Please give us a star if you like this project. Which is important to us. Thanks!**</font> :stuck_out_tongue_winking_eye:
 
 
 <!-- ### Comparison with Previous Works
