@@ -12,6 +12,9 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 <img src='assets/show.JPG'>
 
 
+<font color='red'>**Note: Please give us a star if you like this project. Which is important to us. Thanks!**</font> :stuck_out_tongue_winking_eye:
+
+
 <!-- ### Comparison with Previous Works
 
 <p align="center">
