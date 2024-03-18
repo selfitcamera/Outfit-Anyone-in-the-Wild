@@ -16,14 +16,19 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 <img src='assets/show.JPG'>
 
 
-<!-- ### Comparison with Previous Works
+# UPDATE
+<details>
+<summary> click to expand</summary>
+* 2024.03.18 We believe that the gpt-3 time for try-on has arrived. We will soon release an API to create clothing models and try-on.
+* 2024.03.01 The hand generation problem is solved, algorithm will almost never get misshapen hands.
+* 2024.02.05 We have added skin color matching, and the algorithm effect is more friendly to people of all races.
+* 2023.12.28 We have added many innovative tricks to solve the problem of user facial id consistency.
+* 2023.11.12 The algorithm process of user try-on is implemented for the first time, and the robustness of the try-on effect under different poses amazed us all.
+* 2023.07.20 After countless attempts, we successfully found a way to embed clothing information into the human body parametric model.
+* 2023.03.06 After burning nearly $750,000, a massive 3D human body dataset was collected.
+* 2022.12.15 Several PhDs got together for dinner, and one of them proposed to develop a try-on algorithm that has no restrictions on user photos. 
+</details>
 
-<p align="center">
-  <img src="assets/compare-a.png">
-</p>
-
-Comparison with existing tuning-free state-of-the-art techniques. InstantID achieves better fidelity and retain good text editability (faces and styles blend better).
- -->
 
 ## Abstract
 Virtual Try-On task aims to transfer an in-shop garment image onto a target person. Existing methods focus on improving metrics on the fitting data set, they often overlook the diversity of user poses and complexity of environments in street photos. In addition, how to maintain the consistency of user IDs and clothing style details is also a more tricky topic. All the above problems prevent virtual try-on tasks from being implemented in real scenes and online e-commerce. 
