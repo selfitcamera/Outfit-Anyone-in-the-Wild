@@ -17,8 +17,7 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 
 
 # UPDATE
-<details>
-<summary> click to expand</summary>
+
 * 2024.03.18 We believe that the gpt-3 time for try-on has arrived. We will soon release an API to create clothing models and try-on.
 * 2024.03.01 The hand generation problem is solved, algorithm will almost never get misshapen hands.
 * 2024.02.05 We have added skin color matching, and the algorithm effect is more friendly to people of all races.
@@ -27,7 +26,6 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 * 2023.07.20 After countless attempts, we successfully found a way to embed clothing information into the human body parametric model.
 * 2023.03.06 After burning nearly $750,000, a massive 3D human body dataset was collected.
 * 2022.12.15 Several PhDs got together for dinner, and one of them proposed to develop a try-on algorithm that has no restrictions on user photos. 
-</details>
 
 
 ## Abstract
