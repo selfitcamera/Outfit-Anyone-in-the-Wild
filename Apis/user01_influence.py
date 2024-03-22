@@ -32,7 +32,7 @@ if __name__ == '__main__':
     clothId = 208 # 服装的编号，可以在网站上看到
     height = 1.70 # 用户的身高，170厘米=1.7米
     weight = 65 # 用户的体重，65公斤
-    fileName = 'test_input.jpg' # 不包含路径的文件名字，可以是jpg/png等
+    fileName = 'test_input.png' # 不包含路径的文件名字，可以是jpg/png等
     cur_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(cur_dir, 'datas')
     pose_path = os.path.join(data_dir, fileName)
@@ -49,6 +49,7 @@ if __name__ == '__main__':
     session = requests.session()
     ret = requests.get(f"{ApiUrl}/api/inf/inf_upload", params=params)
     res = 0
+    print(ret)
     if ret.status_code==200:
         if 'data' in ret.json():
             print(ret.json())
@@ -71,6 +72,7 @@ if __name__ == '__main__':
             data = ret.json()
             print("失败信息为, ", data)
             exit(0)
+    # exit(0)
     ################### 第1步、获取一个上传链接，该链接可用于上传图片 ###################
     
 
