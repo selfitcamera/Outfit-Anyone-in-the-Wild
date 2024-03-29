@@ -32,6 +32,7 @@ if __name__ == '__main__':
     clothId = 208 # 服装的编号，可以在网站上看到
     height = 1.70 # 用户的身高，170厘米=1.7米
     weight = 65 # 用户的体重，65公斤
+    skin = -100 # -100:自动检测人种  0: 白人 1:亚洲人 3:印度/东南亚人 6: 黑人
     fileName = 'test_input.png' # 不包含路径的文件名字，可以是jpg/png等
     # fileName = 'test_wrong_input.jpg' # a bad input, not human body photo
     cur_dir = os.path.dirname(os.path.abspath(__file__))
@@ -91,7 +92,7 @@ if __name__ == '__main__':
     bmi = weight/(height*height) # 计算bmi，需要调用者自行计算
     print(bmi)
     params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId, 
-        'clothId':clothId, 'bmi':bmi}
+        'clothId':clothId, 'bmi':bmi, 'skin':skin}
     session = requests.session()
     ret = requests.get(f"{ApiUrl}/api/inf/public_inf", params=params)
     if ret.status_code==200:
