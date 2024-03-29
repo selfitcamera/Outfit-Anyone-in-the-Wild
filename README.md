@@ -56,3 +56,7 @@ Extensive experiments on an in-the-wild test set demonstrate the superiority of 
 - [ModelScope](https://github.com/modelscope/modelscope) 
 
 For any question, please feel free to contact us via jiangxiaoguo@selfitcamera.cn
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=selfitcamera/Outfit-Anyone-in-the-Wild&type=Date)](https://star-history.com/#selfitcamera/Outfit-Anyone-in-the-Wild&Date)
