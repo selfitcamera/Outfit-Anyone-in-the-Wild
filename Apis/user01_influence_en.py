@@ -85,7 +85,7 @@ if __name__ == '__main__':
     ################### Step 2. Upload pictures ###################
 
 
-    ################### Step 3: Publish the task, and points will start to be deducted at this time ###################
+    ################### Step 3: Publish the task, and coins will start to be consumed at this time ###################
     bmi = weight/(height*height) # To calculate bmi, the caller needs to calculate it by himself
     print(bmi)
     params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId, 
