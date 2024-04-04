@@ -61,8 +61,8 @@ if __name__ == '__main__':
                 {'code': 200, 'msg': 'ok', 'data': {'infId': 3609, 
                 'uploadUrl': ''}}
             """
-            print("当前任务id是: ", data['infId'], " Please remember this ID! Otherwise, the task cannot be queried")
-            print("图片上传链接是: ", data['uploadUrl'])
+            print("currnet infId: ", data['infId'], " Please remember this ID! Otherwise, the task cannot be queried")
+            print("image unload url is ", data['uploadUrl'])
         else:
             """
                 [Failure] An example returns a result with insufficient points.
@@ -70,7 +70,7 @@ if __name__ == '__main__':
             """
             print(ret.json())
             data = ret.json()
-            print("失败信息为, ", data)
+            print("fail info is, ", data)
             exit(0)
     ################### Step 1. Get an upload link, which can be used to upload images ###################
     
@@ -99,9 +99,9 @@ if __name__ == '__main__':
                 [Success] An example returns the result
                 {'code': 200, 'msg': 'ok', 'data': True}
             """
-            print('成功发布任务')
+            print('public task successfully!')
         else:
-            print('发布任务失败')
+            print('public task failed')
             exit(0)
     else:
         exit(0)
