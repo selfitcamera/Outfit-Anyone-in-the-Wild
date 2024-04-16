@@ -18,7 +18,7 @@ def onClick(cloth_id, pose_image, pose_id, size, request: gr.Request):
         # res = cv2.imread(res)
         return res, "Done! Use the pre-run results directly, the cloth size does not take effect "
     else:
-        return None, "由于openXLab的demo在访问时无法获取访问者ip用于绑定推理结果，故该空间暂时无法提供推理服务。您可以（1）在huggingface的同名space尝试自己上传图片，或（2）在赛飞相机内操作"
+        return None, "由于openXLab的demo在访问时无法获取访问者ip用于绑定推理结果，故该空间暂时无法提供推理服务。您可以在huggingface的同名space尝试自己上传图片"
 
         try:
             client_ip = request.client.host

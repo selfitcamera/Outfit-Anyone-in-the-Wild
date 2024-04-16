@@ -33,8 +33,8 @@ if __name__ == '__main__':
     height = 1.70 # 用户的身高，170厘米=1.7米
     weight = 65 # 用户的体重，65公斤
     skin = -100 # -100:自动检测人种  0: 白人 1:亚洲人 3:印度/东南亚人 6: 黑人
-    fileName = 'test_input.png' # 不包含路径的文件名字，可以是jpg/png等
-    # fileName = 'test_wrong_input.jpg' # a bad input, not human body photo
+    # fileName = 'test_input.png' # 不包含路径的文件名字，可以是jpg/png等
+    fileName = 'test_wrong_input.jpg' # a bad input, not human body photo
     cur_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(cur_dir, 'datas')
     pose_path = os.path.join(data_dir, fileName)
@@ -102,6 +102,7 @@ if __name__ == '__main__':
                 【成功】一个示例返回结果，'data'是一个float，代表用户当前的积分
                 {'code': 200, 'msg': 'ok', 'data': True}
             """
+            print(ret.json()['data'] is True)
             print('成功发布任务')
         else:
             print('发布任务失败')
