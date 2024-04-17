@@ -49,7 +49,7 @@ if __name__ == '__main__':
     upload_url = ''
     params = {'openId':OpenId, 'apiKey':ApiKey, 'fileName':fileName}
     session = requests.session()
-    ret = requests.get(f"{ApiUrl}/api/inf/inf_upload", params=params)
+    ret = requests.post(f"{ApiUrl}/api/inf/inf_upload", data=json.dumps(params))
     res = 0
     print(ret)
     if ret.status_code==200:
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId, 
         'clothId':clothId, 'bmi':bmi, 'skin':skin}
     session = requests.session()
-    ret = requests.get(f"{ApiUrl}/api/inf/public_inf", params=params)
+    ret = requests.post(f"{ApiUrl}/api/inf/public_inf", data=json.dumps(params))
     if ret.status_code==200:
         print(ret.json())
         if 'data' in ret.json():
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     for _ in range(30):
         params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId}
         session = requests.session()
-        ret = requests.get(f"{ApiUrl}/api/inf/get_result", params=params)
+        ret = requests.post(f"{ApiUrl}/api/inf/get_result", data=json.dumps(params))
         if ret.status_code==200:
             print(ret.json())
             if 'data' in ret.json():

@@ -33,7 +33,8 @@ if __name__ == '__main__':
     height = 1.70 # User's height, 170 cm = 1.7 meters
     weight = 65 # User's weight, 65 kg
     skin = -100 # -100:automatic detect  0: white 1:asian 3:Indian 6: black
-    fileName = 'test_input.png' # File name without path, can be jpg/png, etc.
+    # fileName = 'test_input.png' # File name without path, can be jpg/png, etc.
+    fileName = 'test_wrong_input.jpg' # File name without path, can be jpg/png, etc.
     cur_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(cur_dir, 'datas')
     pose_path = os.path.join(data_dir, fileName)
@@ -48,7 +49,8 @@ if __name__ == '__main__':
     upload_url = ''
     params = {'openId':OpenId, 'apiKey':ApiKey, 'fileName':fileName}
     session = requests.session()
-    ret = requests.get(f"{ApiUrl}/api/inf/inf_upload", params=params)
+    ret = requests.post(f"{ApiUrl}/api/inf/inf_upload", data=json.dumps(params))
+
     res = 0
     if ret.status_code==200:
         if 'data' in ret.json():
@@ -91,7 +93,7 @@ if __name__ == '__main__':
     params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId, 
         'clothId':clothId, 'bmi':bmi, 'skin':skin}
     session = requests.session()
-    ret = requests.get(f"{ApiUrl}/api/inf/public_inf", params=params)
+    ret = requests.post(f"{ApiUrl}/api/inf/public_inf", data=json.dumps(params))
     if ret.status_code==200:
         print(ret.json())
         if 'data' in ret.json():
@@ -116,7 +118,7 @@ if __name__ == '__main__':
     for _ in range(30):
         params = {'openId':OpenId, 'apiKey':ApiKey, 'infId':infId}
         session = requests.session()
-        ret = requests.get(f"{ApiUrl}/api/inf/get_result", params=params)
+        ret = requests.post(f"{ApiUrl}/api/inf/get_result", data=json.dumps(params))
         if ret.status_code==200:
             print(ret.json())
             if 'data' in ret.json():
