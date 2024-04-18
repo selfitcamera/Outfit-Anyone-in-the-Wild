@@ -1,6 +1,6 @@
 opencv-python
 numpy
 requests
-gradio==3.41.2
+gradio==4.19.2
 gradio-client==0.5.0
 
