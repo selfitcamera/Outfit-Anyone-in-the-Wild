@@ -16,9 +16,9 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 <img src='assets/show.JPG'>
 
 ## Test results on real user photos
-- [man01](https://selfitcamera.online/ClothData/Publics/Shows/shows/man_v2/man_v2.html) 
-- [woman01](https://selfitcamera.online/ClothData/Publics/Shows/shows/cider/cider_0403.html) 
-- [woman02](https://selfitcamera.online/ClothData/Publics/Shows/shows/baifa/baifa_0408.html) 
+- [man01](https://heybeautify.online/ClothData/Publics/Shows/shows/man_v2/man_v2.html) 
+- [woman01](https://heybeautify.online/ClothData/Publics/Shows/shows/cider/cider_0403.html) 
+- [woman02](https://heybeautify.online/ClothData/Publics/Shows/shows/baifa/baifa_0408.html) 
 
 ## UPDATE
 
