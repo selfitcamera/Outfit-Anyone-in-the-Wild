@@ -40,14 +40,6 @@ We first model human bodies in the user's photo and clothing photo through our p
 
 Extensive experiments on an in-the-wild test set demonstrate the superiority of our method, surpassing state-of-the-art methods both qualitatively and quantitatively
 
-<!-- 
-## Api Usage Tips
-- Get your own ```openId``` and ```apiKey``` in WeChat applet **SelfitCamera (赛飞相机)**
-- Create your clothing model in WeChat applet **SelfitCamera (赛飞相机)**, record its ```clothId``` in details page.
-- Upload your pose image with function ```upload_pose_img```, then public a cloth swap task ```publicClothSwap```
-- Get result with ```getInfRes```
- -->
-
 ## Acknowledgements
 - [openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) 
 - [M3D-VTON](https://github.com/fyviezhao/M3D-VTON) 
