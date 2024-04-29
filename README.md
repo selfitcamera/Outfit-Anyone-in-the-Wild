@@ -15,6 +15,9 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 
 <img src='assets/show.JPG'>
 
+## Other Demo
+- [IDM PLUS OUTFITANYONE](https://huggingface.co/spaces/selfit-camera/IDM-VTON-PLUS)
+
 ## Test results on real user photos
 - [man01](https://heybeautify.online/ClothData/Publics/Shows/shows/man_v2/man_v2.html) 
 - [woman01](https://heybeautify.online/ClothData/Publics/Shows/shows/cider/cider_0403.html) 
