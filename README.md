@@ -25,6 +25,8 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 
 ## UPDATE
 
+* 2024.05.08 Website [heybeauty](https://www.producthunt.com/posts/heybeauty) has been launched ! 
+
 * 2024.03.18 We believe that the gpt-3 time for try-on has arrived. We will soon release an API to create clothing models and try-on.
 * 2024.03.01 The hand generation problem is solved, algorithm will almost never get misshapen hands.
 * 2024.02.05 We have added skin color matching, and the algorithm effect is more friendly to people of all races.
