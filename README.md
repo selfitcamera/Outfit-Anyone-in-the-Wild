@@ -8,7 +8,7 @@
 </div>
 
 
-<font color='red'>**Note: Please give us a star if you like this project. Which is important to us. Thanks!**</font> :stuck_out_tongue_winking_eye:
+<font color='red'>**Go to [heybeauty](https://www.producthunt.com/posts/heybeauty)for free try-on now!**</font> :stuck_out_tongue_winking_eye:
 
 
 OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to produce high-quality try-on result on street photos. It achievies a perfect balance between user's face ID retention and clothing detail consistency.
