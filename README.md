@@ -10,6 +10,8 @@
 
 <font color='red'>**Go to [HeyBeauty](https://www.producthunt.com/posts/heybeauty) for free try-on now!**</font> :stuck_out_tongue_winking_eye:
 
+<font color='red'>**The [Api for fast-try-on](https://heybeauty.ai/keys) has been officially released!**</font> :stuck_out_tongue_winking_eye:
+
 
 OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to produce high-quality try-on result on street photos. It achievies a perfect balance between user's face ID retention and clothing detail consistency.
 
@@ -25,8 +27,8 @@ OutfitAnyone in the Wild is a new state-of-the-art virtual try-on method to prod
 
 ## UPDATE
 
+* 2024.05.25 The [Api for fast-try-on](https://heybeauty.ai/keys) has been officially released!
 * 2024.05.08 Website [heybeauty](https://www.producthunt.com/posts/heybeauty) has been launched ! 
-
 * 2024.03.18 We believe that the gpt-3 time for try-on has arrived. We will soon release an API to create clothing models and try-on.
 * 2024.03.01 The hand generation problem is solved, algorithm will almost never get misshapen hands.
 * 2024.02.05 We have added skin color matching, and the algorithm effect is more friendly to people of all races.
