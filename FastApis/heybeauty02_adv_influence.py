@@ -24,15 +24,12 @@ ApiKey = args.ApiKey
 if __name__ == '__main__':
 
     poseName = '1_pose.jpg'
-    clothName = '2_cloth.jpg'
     cur_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(cur_dir, 'datas/fastinfs')
     pose_path = os.path.join(data_dir, poseName)
-    cloth_path = os.path.join(data_dir, clothName)
 
     out_pose_path = os.path.join(data_dir, 'out_pose.jpg') # The output is in jpg format
-    out_img_path = os.path.join(data_dir, 'out_img.jpg') # The output is in jpg format
-    out_mask_path = os.path.join(data_dir, 'out_mask.jpg') # The output is in jpg format
+    out_img_path = os.path.join(data_dir, 'out_adv_img.jpg') # The output is in jpg format
     
     headers = {
         "Content-Type": "application/json",
@@ -46,10 +43,11 @@ if __name__ == '__main__':
     poseUrl = ''
 
     params = {
+        "tryon_type": "advanced",
         "user_img_name": poseName,
-        "cloth_img_name": clothName,
-        "category": "1",
-        "caption": "red, t-shirt"
+        "cloth_id": "305",
+        "height": "172",
+        "weight": "65"
     }
     session = requests.session()
     ret = requests.post(f"https://heybeauty.ai/api/create-task", 
@@ -61,8 +59,6 @@ if __name__ == '__main__':
             print(ret.json())
             data = ret.json()['data']
             uuid = data['uuid']
-            clothUrl = data['cloth_img_url']
-            maskUrl = data['mask_img_url']
             poseUrl = data['user_img_url']
             """
                 {'code': 0, 'message': 'ok', 
@@ -79,12 +75,6 @@ if __name__ == '__main__':
             """
             print("currnet uuid: ", uuid, " Please remember this ID! Otherwise, the task cannot be queried")
         else:
-            """
-            {
-                "code": 500,
-                "msg": "Hacker access detected！"
-            }
-            """
             print(ret.json())
             data = ret.json()
             print("fail info is, ", data)
@@ -93,12 +83,6 @@ if __name__ == '__main__':
     
 
     ################### Step 2. Upload pictures ###################
-    with open(cloth_path, 'rb') as file:
-        response = requests.put(clothUrl, data=file)
-        if response.status_code == 200:
-            print(response)
-        else:
-            raise Exception('upload failed！')
     with open(pose_path, 'rb') as file:
         response = requests.put(poseUrl, data=file)
         if response.status_code == 200:
@@ -141,7 +125,6 @@ if __name__ == '__main__':
     
     out_pose_path = os.path.join(data_dir, 'out_pose.jpg') # The output is in jpg format
     out_img_path = os.path.join(data_dir, 'out_img.jpg') # The output is in jpg format
-    out_mask_path = os.path.join(data_dir, 'out_mask.jpg') # The output is in jpg format
     
     
     ################ Step 4: Continuously query task status ################
@@ -149,7 +132,7 @@ if __name__ == '__main__':
     # Sometimes you need to queue, which may take more than 40 seconds
     # Sometimes the computer does not turn on, and it takes 10 minutes to complete.
     for _ in range(30):
-        time.sleep(18)
+        time.sleep(60)
         params = {'task_uuid':uuid}
         session = requests.session()
         ret = requests.post(f"https://heybeauty.ai/api/get-task-info", 
@@ -174,12 +157,11 @@ if __name__ == '__main__':
                 """
                 # In fact, you only need to pay attention to these 3 fields
                 print("The current task status is: ", data['status'])
-
+                
                 if data['status']=='successed':
                     print(data['user_img_url'])
                     urlretrieve(data['user_img_url'], out_pose_path)
                     urlretrieve(data['tryon_img_url'], out_img_path)
-                    urlretrieve(data['mask_img_url'], out_mask_path)
                     print(f"The task has been completed！", flush=True)
                     break
                 elif data['status']=='processing':
